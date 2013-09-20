@@ -1,0 +1,13 @@
+.red-bar{
+	background: #800E0E;
+}
+body{
+	background: #EEEEEE;
+}
+.jumbotron{
+	background: #FFFFFF;
+	border-radius:0px !important;
+}
+#contact textarea{
+	height: 280px;
+}

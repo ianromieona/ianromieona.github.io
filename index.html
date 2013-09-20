@@ -1,81 +1,96 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Ian Romie Ona</title>
-    <link rel="shortcut icon" href="images/logo.png">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="bootstrap/assets/ico/favicon.png">
 
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/examples/starter-template/starter-template.css" rel="stylesheet">
+    <link href="bootstrap/dist/css/custom.css" rel="stylesheet">
+
+    <script src="bootstrap/assets/js/html5shiv.js"></script>
+    <script src="bootstrap/assets/js/respond.min.js"></script>
   </head>
+
   <body>
-    <div class="wrapper">
 
-      <section>
-        <div id="title">
-          <h1><image src='images/logo-2.png'></h1>
-          <p><b>&lt;</b> Programmer's Code <b>&gt;</b></p>
-          <hr>
-          <span class="credits left">Project by <a href="https://github.com/ianromieona">ianromieona</a></span>
-          <span class="credits right">Hosted on GitHub Pages</span>
+    <div class="navbar navbar-inverse navbar-fixed-top red-bar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-
-        <h3>
-        <h1>Coming Soon.. </h1>
-<!-- <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section> -->
-
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#" id="triggerAbout">About</a></li>
+            <li><a href="#" id="triggerContact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("ian romie ona ");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
 
+    <div id="about">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>About Me</h1>
+          <div class="row">
+              <div class="col-md-3">
+                  <img src="bootstrap/images/profile.jpg" alt="Ian Romie Ona" class="img-thumbnail">
+                  <table >
+                    <tr>
+                      <td><a href="http://facebook.com/mushyasha"><img src="bootstrap/images/facebook-icon.png" alt="facebook"></a></td>
+                      <td><a href="http://facebook.com/ihyan38"><img src="bootstrap/images/twitter-icon.png" alt="twitter" ></a></td>
+                      <td><a href=""><img src="bootstrap/images/google-icon.png" alt="google" ></a></td>
+                    </tr>
+                  </table>
+              </div>
+              <div class="col-md-9"><h2><span class="glyphicon glyphicon-chevron-left"></span>Ian Romie Ona <small>Developer</small></h2></div>
+              <p>I'm a <span id="age"></span> year old Web Develeper in the Philippines. I like to program <b>jQuery</b> stuff because of its awesomeness. <b>Yeah!</b> . <b>PHP / MySQL</b> is my expertise but i wanna build my mind on <b>JAVA</b> programming. I'm also a gamer of playstation 2.  I like the songs of Yeng Constantino and The Script.Like booming the bass dude!</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <div id="contact" style="display:none">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Contact Me</h1>
+            <form action="" class="form-signin">
+              <div class="row"> 
+                <div class="col-md-5">
+                  <div class="col-md-12">
+                    <input type="text" name="name" placeholder="Enter name" class="form-control" >
+                    <input type="text" name="name" placeholder="Enter email address" class="form-control" id="exampleInputEmail1">
+                    <textarea class="form-control" name="body" ></textarea>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Makati+City,+Metro+Manila,+Philippines&amp;aq=0&amp;oq=makati&amp;sll=37.0625,-95.677068&amp;sspn=40.409448,82.265625&amp;ie=UTF8&amp;hq=&amp;hnear=Makati+City,+Metro+Manila,+Philippines&amp;t=m&amp;z=13&amp;ll=14.554729,121.024445&amp;output=embed"></iframe>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/assets/js/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/dist/js/custom.js"></script>
   </body>
 </html>
