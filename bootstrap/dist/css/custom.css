@@ -8,6 +8,9 @@ body{
 h2{
 	font-family: 'Raleway', sans-serif;
 }
+.banner{
+	border:0px;
+}
 .jumbotron{
 	background: #FFFFFF;
 	border-radius:0px !important;
