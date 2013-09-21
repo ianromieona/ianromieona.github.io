@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="bootstrap/examples/starter-template/starter-template.css" rel="stylesheet">
     <link href="bootstrap/dist/css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
     <script src="bootstrap/assets/js/html5shiv.js"></script>
     <script src="bootstrap/assets/js/respond.min.js"></script>
@@ -44,10 +45,19 @@
     <div id="about">
       <div class="jumbotron">
         <div class="container">
-          <h1>About Me</h1>
+          <h2><span class="glyphicon glyphicon-chevron-left"></span>About Me<span class="glyphicon glyphicon-chevron-right"></span></h2>
           <div class="row">
               <div class="col-md-3">
-                  <img src="bootstrap/images/profile.jpg" alt="Ian Romie Ona" class="img-thumbnail">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                  <div class="flipper">
+                    <div class="front">
+                      <img src="bootstrap/images/profile.jpg" alt="Ian Romie Ona" class="img-thumbnail">
+                    </div>
+                   <div class="back">
+                    <img src="bootstrap/images/profile.jpg" alt="Ian Romie Ona" class="img-thumbnail">
+                    </div>
+                  </div>
+                </div>
                   <table >
                     <tr>
                       <td><a href="http://facebook.com/mushyasha"><img src="bootstrap/images/facebook-icon.png" alt="facebook"></a></td>
@@ -57,7 +67,7 @@
                     </tr>
                   </table>
               </div>
-              <div class="col-md-9"><h2><span class="glyphicon glyphicon-chevron-left hidden-phone"></span>Ian Romie Ona <small>Developer</small></h2></div>
+              <div class="col-md-9"><h2>Ian Romie Ona <small>Developer</small></h2></div>
               <p>I'm a <span id="age"></span> year old Web Develeper in the Philippines. I like to program <b>jQuery</b> stuff because of its awesomeness.yeah! . <b>PHP / MySQL</b> is my expertise but i wanna build my mind on <b>JAVA</b> programming. I'm also a gamer of playstation 2.  I like the songs of Yeng Constantino and The Script.Like booming the bass dude!</p>
           </div>
         </div>
@@ -67,7 +77,7 @@
     <div id="contact" style="display:none">
       <div class="jumbotron">
         <div class="container">
-          <h1>Contact Me</h1>
+          <h2><span class="glyphicon glyphicon-chevron-left"></span>Contact Me<span class="glyphicon glyphicon-chevron-right"></span></h2>
             <form action="" class="form-signin">
               <div class="row"> 
                 <div class="col-md-5">
