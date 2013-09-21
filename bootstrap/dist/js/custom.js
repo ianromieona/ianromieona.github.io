@@ -2,12 +2,16 @@ $(document).ready(function(){
 	/* MY AGE */
 	$("#age").text(getAge(new Date(1991, 11, 30)));
 	$("#triggerAbout").click(function(){
+		$("#triggerContact").closest('li').removeClass('active');
 		$("#about").show();
+		$(this).closest('li').addClass('active');
 		$("#contact").hide();
 	})
 	$("#triggerContact").click(function(){
+		 $("#triggerAbout").closest('li').removeClass('active');
+		 $("#about").hide();
+		$(this).closest('li').addClass('active');
 		$("#contact").show();
-		$("#about").hide();
 	})
 })
 function getAge(d1, d2){

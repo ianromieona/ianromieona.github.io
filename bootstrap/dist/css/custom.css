@@ -11,3 +11,6 @@ body{
 #contact textarea{
 	height: 280px;
 }
+#about b{
+	color: #800E0E !important;
+}
