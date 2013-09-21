@@ -19,11 +19,3 @@ function getAge(d1, d2){
     var diff = d2.getTime() - d1.getTime();
     return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
 }
-
-NProgress.start();
-setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
-
-$("#b-0").click(function() { NProgress.start(); });
-$("#b-40").click(function() { NProgress.set(0.4); });
-$("#b-inc").click(function() { NProgress.inc(); });
-$("#b-100").click(function() { NProgress.done(); });
