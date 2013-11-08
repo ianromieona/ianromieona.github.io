@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.png">
+
+    <title>Ian Romie Ona</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../bootstrap/examples/starter-template/starter-template.css" rel="stylesheet">
+    <link href="../bootstrap/dist/css/custom.css" rel="stylesheet">
+    <link href="../bootstrap/dist/css/form-validation.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <script src="../bootstrap/assets/js/html5shiv.js"></script>
+    <script src="../bootstrap/assets/js/respond.min.js"></script>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top red-bar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#" id="triggerAbout">About</a></li>
+            <li><a href="#" id="triggerContact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+      <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <b> /* SIMPLE FORM VALIDATION */ </b>
+                  <form class="form" role="form">
+                    <table>
+                        <tr>
+                            <td class="col-md-3"><input type="text" name="name" id="" class="validate form-control" size="30" placeholder="Firstname"></td>
+                        </tr>   
+                        <tr>
+                            <td class="col-md-3"><input type="text" name="age" id="" class="validate form-control"  size="30" placeholder="Lastname"></td>
+                        </tr> 
+                        <tr>
+                            <td class="col-md-3"><textarea name="bio" id="" cols="30" rows="5" class="validate form-control" placeholder="Address"></textarea></td>
+                        </tr> 
+                        <tr>
+                            <td class="col-md-3"> <input type="submit" value="submit" name="submit" class="btn btn-danger"></td>
+                        </tr> 
+                    </table>
+                  </form> 
+                </div>
+                Just put a class on your form : <span class="label label-success">form</span><br>
+                then add class to your element :  <span class="label label-warning">validate</span><br>
+                <hr>
+                <b>&lt JS / JQUERY &gt</b><br>
+                <span class="glyphicon glyphicon-fullscreen" data-toggle="modal" data-target="#myModal"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-download-alt"></span><a href="../bootstrap/dist/js/form-validation.js">form-validation.js</a><br>
+                <b>&lt CSS &gt</b><br>
+                <span class="glyphicon glyphicon-fullscreen" data-toggle="modal" data-target="#myModal2"></span>&nbsp;&nbsp;<span class="glyphicon glyphicon-download-alt"></span><a href="../bootstrap/dist/css/form-validation.css">form-validation.css</a>
+                <!-- Button trigger modal -->
+               
+                
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">form-validation.js</h4>
+                      </div>
+                      <div class="modal-body">
+                        <small><pre>
+$(document).ready(function(){
+	$("input:submit").click(function(){
+		stop = true;
+		$(this).closest(".form").find(".validate").each(function(){
+			if($(this).val() == ""){
+				$(this).addClass("required");
+				stop = false;
+			}else{
+				$(this).removeClass("required");
+			}
+		})
+		return stop;
+	})
+})   
+</pre></small>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">form-validation.css</h4>
+                      </div>
+                      <div class="modal-body">
+                        <small><pre>
+.form .required {
+	border: 2px solid red;
+}  
+</pre></small>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div>
+
+        </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../bootstrap/assets/js/jquery.js"></script>
+    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/dist/js/custom.js"></script>
+    <script src="../bootstrap/dist/js/form-validation.js"></script>
+  </body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44227901-1', 'ianromieona.github.io');
+  ga('send', 'pageview');
+
+</script>
