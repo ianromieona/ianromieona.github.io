@@ -1,0 +1,89 @@
+html ,body {
+    background: #F2F2F2;
+    font-face: 'tahoma';
+    color:#353535;
+}
+#login-form , #signup-form {
+    top:70;
+    background: #FFFFFF;
+    width:30%;
+    #height:200px;
+    border:1px solid #353535;
+    position:absolute;
+    border-width: thick thin thick thin;
+    box-shadow: 0 8px 6px -6px black;
+} 
+#login-form {
+    left: 35%;
+}
+#signup-form {
+    right: 0%;
+    display:none;
+}
+#login-form > input, #signup-form > input {
+    margin: 10px 10px 0px 0px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    width:100%;
+    height:50px;
+    font-size:1.3em;  
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    #text-align:center;
+} 
+#login-form  .email {
+    background: url(../images/Misc-User-icon.png) no-repeat scroll 7px 15px;
+    padding-left:30px;
+}
+#login-form  .password {
+    background: url(../images/lock-icon.png) no-repeat scroll 7px 15px;
+    padding-left:30px;
+}
+#signup-form input {
+    background: url(../images/Information-icon.png) no-repeat scroll 7px 15px;
+    padding-left:30px;
+}
+#login-form button, #signup-form button {
+    border-radius:0px;
+    height:50px;
+    float:right;
+    margin: -6px 2px 2px 2px;
+}
+button {
+    background: #e3e3e3;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+    box-shadow: inset 0 0 1px 1px #f6f6f6;
+    color: #333;
+    font: bold 12px/1 "helvetica neue", helvetica, tahoma, sans-serif;
+    padding: 8px 0 9px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    width: 150px; 
+}
+button:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer; 
+}
+button:active {
+    background: #d0d0d0;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; 
+}
+.login-header{
+    font: 2em 'tahoma';
+    font-weight:bolder;
+}
+.fancy {
+    color: #307ADB;
+}
+#sign-up , #sign-in{
+    color:maroon;
+    text-decoration:none;
+    font:.8em 'tahoma';
+}
