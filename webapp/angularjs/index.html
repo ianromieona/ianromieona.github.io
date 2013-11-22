@@ -15,7 +15,7 @@
     <script>
       var app = angular.module("myapp", ["firebase"]);
       function MyController($scope, angularFire) {
-        var ref = new Firebase("https://tppftuo2xf6.firebaseio-demo.com/");
+       // var ref = new Firebase("https://tppftuo2xf6.firebaseio-demo.com/");
         $scope.messages = [];
         angularFire(ref, $scope, "messages");
         $scope.addMessage = function(e) {
