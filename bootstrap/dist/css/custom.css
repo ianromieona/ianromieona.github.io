@@ -54,4 +54,5 @@ p {
 }
 .progress{
     border-radius:0px;   
+    height: 10px;
 }

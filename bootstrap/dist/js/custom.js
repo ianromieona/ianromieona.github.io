@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	/* MY AGE */
 	$("#age").text(getAge(new Date(1991, 11, 30)));
-	
+	$('.social .progress-bar').each(function(index){
+		$(this).animate({'width':$(this).data('rate')})
+	})	
 })
 function getAge(d1, d2){
     d2 = d2 || new Date();
