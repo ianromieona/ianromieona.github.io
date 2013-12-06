@@ -1,0 +1,22 @@
+body {
+	background: #EDEFF4;
+}
+.navigation {
+	background: #FFFFFF;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+} 
+.navigation .navbar {
+	border-bottom : 1px solid grey;
+}
+.navigation ul li {
+	display: inline;
+	margin: 10px;
+
+}
+.navbody {
+	padding:10px;
+	display:none;
+}
