@@ -1,0 +1,30 @@
+body {
+    font-family: 'Oxygen Mono', sans-serif;
+    background: #354B5E;
+}
+#date {
+    font-size: 1em;
+    color: #DCDDD8;
+}
+#time,#sec,#min {
+    font-weight: bolder;
+    font-size: 8em;
+    color: #DCDDD8;
+}
+#mode {
+    font-weight: bolder;
+    font-size: 8em;
+    color: #D74B4B;
+    text-shadow: #D74B4B 0px 1px 1px;
+}
+#powered {
+    position: fixed;
+    right:0;
+    bottom: 0;
+    color:#DCDDD8;
+    font-size:12px;
+}
+
+#sec {
+    color: #D74B4B;
+}
