@@ -231,7 +231,14 @@ html, body { height: 100%; }
 	z-index: 999;
 	margin-left: -30%;
 }
-.formLogin,.formSignin {
+.formSignin {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   width: 500px;
+   height: 500px;	
+}
+.formLogin {
    position: absolute;
    top: 40%;
    left: 50%;
@@ -254,4 +261,9 @@ html, body { height: 100%; }
 .formLogin > input[type='button'] {
 	background: #354B5E;
 	color: #DCDDD8;
+}
+.credits {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }

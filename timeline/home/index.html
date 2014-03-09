@@ -25,7 +25,7 @@
 			<div class="main">
 				<ul class="cbp_tmtimeline">
 					<li>
-						<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span>12:04</span></time>
+						<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span class="date"></span> <span class="time"></span></time>
 						<div class="cbp_tmicon cbp_tmicon-earth"></div>
 						<div class="cbp_tmlabel">
 							<h2><input type="text" class="mtitle" placeholder="Title.."></h2>
@@ -54,58 +54,73 @@
 		var auth = new FirebaseSimpleLogin(moments, function(error, user) {
 			  if (error) {
 			  	// console.log(error);
-				location="./";
+				location="/ianromieona.github.io/timeline";
 			  	return;
 
 			  }else if (user) {
 			  	$user = user.email;
 			  	$('.clearfix > h1').text($user)
+				date = moment().format('MMMM D YYYY');
+				time = moment().format('H');
+		        min = moment().format('mm');
+				var url = 'https://moment.firebaseio.com/.json';
+		        var tmpname,tmpmessage; 
+		        var mt = '';
+		        var $main = $('.main .cbp_tmtimeline:last');
+		        $.ajax({
+		          dataType: "json",
+		          url: url,
+		          success: function(data){
+		          	// console.log(dataType)
+		                if(data){
+		                    $.each(data,function(key,value){
+		                      $.each(value,function(field,value){
+		                      	if(value.account == $user){
+			                      	mt += '<li>';
+			                      	mt += '<time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>'+value.details.date+'</span> <span>'+value.details.time+'</span></time>';
+			                      	mt += '<div class="cbp_tmicon cbp_tmicon-earth"></div>';
+			                      	mt += '<div class="cbp_tmlabel">';
+									mt += '<h2>'+value.details.title+'</h2>';
+									mt += '<p>'+value.details.description+'</p>';
+									mt += '</div>';
+									mt += '</li>';
+									$main.prepend(mt);
+									mt = '';
+		                      	}
+		                      })
+		                    })
+		                }
+		          }
+		        });
 			  }else{
 
-			  	location="/timeline/";
+			  	location="/ianromieona.github.io/timeline";
 			  	return;
 			  }
 		});
-		date = moment().format('MMMM D YYYY');
-		time = moment().format('H');
-        min = moment().format('mm');
-		var url = 'https://moment.firebaseio.com/.json';
-        var tmpname,tmpmessage; 
-        var mt = '';
-        var $main = $('.main .cbp_tmtimeline:last');
-        $.ajax({
-          dataType: "json",
-          url: url,
-          success: function(data){
-          	// console.log(dataType)
-                if(data){
-                    $.each(data,function(key,value){
-                      $.each(value,function(field,value){
-                      	mt += '<li>';
-                      	mt += '<time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>'+value.details.date+'</span> <span>'+value.details.time+'</span></time>';
-                      	mt += '<div class="cbp_tmicon cbp_tmicon-earth"></div>';
-                      	mt += '<div class="cbp_tmlabel">';
-						mt += '<h2>'+value.details.title+'</h2>';
-						mt += '<p>'+value.details.description+'</p>';
-						mt += '</div>';
-						mt += '</li>';
-						$main.prepend(mt);
-						mt = '';
-                      })
-                    })
-                }
-          }
-        });
         $('.mbutton').on('click',function(){
 	        title = $('.mtitle').val();
 	        description = $('.mdesc').val();
 			moments.push({moments:{account:$user,details:{time : time+":"+min, date : date, title:title, description:description}}});
-			location.reload();
+			// location.reload();
         	
         })
         $('.logout').on('click',function(){
 			// logout user
 			auth.logout();
 		})
+		update()
+		$('.time').text('Loading..');
+		function update(){
+		    setTimeout(function(){
+		        date = moment().format('MMMM D YYYY');
+		        time = moment().format('H');
+		        min = moment().format('mm');
+		        sec = moment().format('ss');
+		       $('.time').text(time +' : '+ min +' : '+ sec);
+		       $('.date').text(date);
+		        update();
+		    },1000)
+		}
 	</script>
 </html>

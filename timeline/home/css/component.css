@@ -205,7 +205,7 @@
 	background: transparent;
 	border: 1px solid #CCCCCC;
 	border-radius: 3px;
-	font-size: 30px;
+	font-size: 20px;
 	color: #FFF;
 }
 .mdesc {
@@ -216,6 +216,10 @@
 	font-size: 30px;
 	color: #FFF;
 	width: 100%;;
+}
+.time {
+	color:#D74B4B !important;
+	font-size: 20px !important;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #FFF;

@@ -30,12 +30,14 @@
 				<div class="pt-triggers">
 					<button id="iterateEffects" class="pt-touch-button">CREATE ACCOUNT TO TIMELINE</button>
 				</div><!-- /triggers -->
+				<small class="credits">Firebase App | Theme by Tympanus</small>
+
 			</div>
 			<div class="pt-page pt-page-2">
 				<h1><span>A collection of time</span><strong>MOM</strong>ENTS</h1>
 				<form action="" class="formSignin">
-					<input type="email" placeholder="Enter email.">
-					<input type="password" placeholder="Enter password.">
+					<input type="email" name="email" placeholder="Enter email.">
+					<input type="password" name="password" placeholder="Enter password.">
 					<input type="button" name="signin" value="Sign in">
 				</form>
 				<div class="pt-triggers">
@@ -61,9 +63,8 @@
 			  	$loading.hide();
 
 			  }else if (user) {
-				location="home/";
-
 			  	$loading.text("REDIRECTING");
+				location="home/";
 			  	// console.log(user);
 			  }else{
 			  	$triggers.show();
@@ -81,7 +82,21 @@
 	 //        console.log(error)
 	 //      }
 	 //    });
-
+		$('.formSignin input[name="signin"]').on('click',function(){
+			$email = $('.formSignin input[name="email"]').val();
+			$password = $('.formSignin input[name="password"]').val();
+			auth.createUser($email,$password, function(error,  user) {
+		      if (!error) {
+		        // doLogin(user);
+				auth.login('password', {
+				  	email: $email,
+				  	password: $password
+				});
+		      } else {
+		        console.log(error)
+		      }
+		    });
+		})
 		$('.formLogin input[name="login"]').on('click',function(){
 			$email = $('.formLogin input[name="email"]').val();
 			$password = $('.formLogin input[name="password"]').val();
@@ -90,10 +105,6 @@
 			  	email: $email,
 			  	password: $password
 			});
-		})
-		$('input[name="logout"]').on('click',function(){
-			// logout user
-			auth.logout();
 		})
 		</script>	
 	</body>
