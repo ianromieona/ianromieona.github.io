@@ -37,13 +37,23 @@
 	z-index: 199;
 	display: none;
 }
+.tt-author .tt-desc-2 .desc-2 {
+	padding:10px;
+	text-align: justify;
+}
+.tt-author .tt-desc-2{
+	overflow-x: auto;
+	height: 250px !important;
+	border-left:1px solid #CCC;
+}
 .tt-author .desc {
 	color: #FFF;
 	z-index: 9999;
 	position: absolute;
-	padding:5px;
+	padding:15px;
 	display: none;
-		overflow: auto;
+	overflow-x: auto;
+	height: 100%;
 }
 .tt-social .social-mask{
 	background:#DCDDD8;
@@ -59,8 +69,8 @@
 }
 .tt-social .social-icons a {
 	display: inline-block;
-	margin-right: 2px !important;
-	margin-left: 2px !important;
+	margin-right: 5px !important;
+	margin-left: 5px !important;
 	text-decoration: none;
 }
 .tt-social .social-icons a img {
