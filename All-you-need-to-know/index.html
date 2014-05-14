@@ -19,7 +19,7 @@
 		<div class="container">
 			<div class="darker"></div>
 			<header class="codrops-header">
-				<h1>All you need to know <span>Movies - Technology - Life - History - Places</a></span></h1>
+				<h1>All you need to know <span><a href="#places" data-id="1" class="category-link">Places</a> - <a href="#technology" data-id="2" class="category-link">Technology</a> - <a href="#history" data-id="3" class="category-link">History</a> - <a href="#movies" data-id="4" class="category-link">Movies</a> - <a href="#life" data-id="5" class="category-link">Life</a></span></h1>
 
 			</header>
 			<section class="grid3d horizontal" id="grid3d">
@@ -60,13 +60,13 @@
 				        if(result){
 				            $.each(result,function(key,value){
 								$.each(value,function(field,value){
-									string = '<figure>';
-									string += '<img src="' + value.images_link + '" alt="img01" height="440px"/>';
 									if(value.category == 1) cat = "Places";
 									if(value.category == 2) cat = "Technology";
 									if(value.category == 3) cat = "History";
 									if(value.category == 4) cat = "Movies";
 									if(value.category == 5) cat = "Life";
+									string = '<figure class="'+ cat +'">';
+									string += '<img src="' + value.images_link + '" alt="img01" height="440px"/>';
 									string += '<div class="category"><label>'+value.title+'</label><small><br>'+ cat +'</small></div>';
 									string += '</figure>';
 									$grid.prepend(string);
@@ -80,6 +80,44 @@
 						new grid3D( document.getElementById( 'grid3d' ) );
 				 	}
 				});
+				$('.category-link').on('click',function(){
+					catID = $(this).data('id')
+					if(catID == 1 ){
+						$('.Places').fadeIn(500)
+						$('.Technology').fadeOut(500)
+						$('.History').fadeOut(500)
+						$('.Movies').fadeOut(500)
+						$('.Life').fadeOut(500)
+					}
+					if(catID == 2 ){
+						$('.Places').fadeOut(500)
+						$('.Technology').fadeIn(500)
+						$('.History').fadeOut(500)
+						$('.Movies').fadeOut(500)
+						$('.Life').fadeOut(500)
+					}
+					if(catID == 3 ){
+						$('.Places').fadeOut(500)
+						$('.Technology').fadeOut(500)
+						$('.History').fadeIn(500)
+						$('.Movies').fadeOut(500)
+						$('.Life').fadeOut(500)
+					}
+					if(catID == 4 ){
+						$('.Places').fadeOut(500)
+						$('.Technology').fadeOut(500)
+						$('.History').fadeOut(500)
+						$('.Movies').fadeIn(500)
+						$('.Life').fadeOut(500)
+					}
+					if(catID == 5 ){
+						$('.Places').fadeOut(500)
+						$('.Technology').fadeOut(500)
+						$('.History').fadeOut(500)
+						$('.Movies').fadeOut(500)
+						$('.Life').fadeIn(500)
+					}
+				})
 			});
 		</script>
 
