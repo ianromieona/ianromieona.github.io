@@ -3,283 +3,177 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ian Romie Ona</title>
-	<link rel="stylesheet" href="bootstrap.css">
-	<link rel="stylesheet" href="docs.css">
-	<link rel="stylesheet" href="animate.css">
-	<link rel="canonical" href="http://codepen.io/lbebber/pen/ypgql" />
-	<link rel='stylesheet prefetch' href='http://codepen.io/assets/reset/normalize.css'><script src='http://codepen.io/assets/libs/prefixfree.min.js'></script>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
 </head>
-<style>
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
-}
-
-div{
-	font-size: 100px;
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	font-weight: 800;
-	
-}
-p{
-display: block;
-	-webkit-margin-before: 1em;
-	-webkit-margin-after: 1em;
-	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px;
-	font-size: 40px !important;
-	font-weight: 200;
-	line-height: 1.25;
-}
-label a{
-	font-family: 'Lato', sans-serif;
-	color:#333;
-}
-label {
-	position: fixed;
-	top:14px;
-	right:29px;
-}
-.name {
-	font-size: 70px !important;
-}
-.my-title {
-	font-size: 24px !important;
-}
-.glitch {
-  color: white;
-  font-size: 100px;
-  position: relative;
-  width: 540px;
-  margin: 0 auto;
-}
-
-@keyframes noise-anim {
-  0% {
-    clip: rect(71px, 9999px, 22px, 0);
-  }
-  5% {
-    clip: rect(68px, 9999px, 93px, 0);
-  }
-  10% {
-    clip: rect(81px, 9999px, 36px, 0);
-  }
-  15.0% {
-    clip: rect(68px, 9999px, 68px, 0);
-  }
-  20% {
-    clip: rect(55px, 9999px, 52px, 0);
-  }
-  25% {
-    clip: rect(9px, 9999px, 50px, 0);
-  }
-  30.0% {
-    clip: rect(91px, 9999px, 72px, 0);
-  }
-  35% {
-    clip: rect(88px, 9999px, 40px, 0);
-  }
-  40% {
-    clip: rect(32px, 9999px, 94px, 0);
-  }
-  45% {
-    clip: rect(63px, 9999px, 30px, 0);
-  }
-  50% {
-    clip: rect(96px, 9999px, 41px, 0);
-  }
-  55.0% {
-    clip: rect(85px, 9999px, 75px, 0);
-  }
-  60.0% {
-    clip: rect(58px, 9999px, 88px, 0);
-  }
-  65% {
-    clip: rect(66px, 9999px, 28px, 0);
-  }
-  70% {
-    clip: rect(76px, 9999px, 4px, 0);
-  }
-  75% {
-    clip: rect(43px, 9999px, 99px, 0);
-  }
-  80% {
-    clip: rect(8px, 9999px, 57px, 0);
-  }
-  85.0% {
-    clip: rect(47px, 9999px, 18px, 0);
-  }
-  90% {
-    clip: rect(89px, 9999px, 36px, 0);
-  }
-  95% {
-    clip: rect(28px, 9999px, 72px, 0);
-  }
-  100% {
-    clip: rect(48px, 9999px, 93px, 0);
-  }
-}
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -1px 0 red;
-  top: 0;
-  color: white;
-  background: #0D0D0D;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(15px, 9999px, 24px, 0);
-  }
-  5% {
-    clip: rect(45px, 9999px, 72px, 0);
-  }
-  10% {
-    clip: rect(34px, 9999px, 24px, 0);
-  }
-  15.0% {
-    clip: rect(86px, 9999px, 52px, 0);
-  }
-  20% {
-    clip: rect(91px, 9999px, 70px, 0);
-  }
-  25% {
-    clip: rect(21px, 9999px, 89px, 0);
-  }
-  30.0% {
-    clip: rect(84px, 9999px, 39px, 0);
-  }
-  35% {
-    clip: rect(4px, 9999px, 58px, 0);
-  }
-  40% {
-    clip: rect(71px, 9999px, 81px, 0);
-  }
-  45% {
-    clip: rect(9px, 9999px, 56px, 0);
-  }
-  50% {
-    clip: rect(72px, 9999px, 10px, 0);
-  }
-  55.0% {
-    clip: rect(30px, 9999px, 52px, 0);
-  }
-  60.0% {
-    clip: rect(79px, 9999px, 91px, 0);
-  }
-  65% {
-    clip: rect(100px, 9999px, 34px, 0);
-  }
-  70% {
-    clip: rect(88px, 9999px, 1px, 0);
-  }
-  75% {
-    clip: rect(48px, 9999px, 3px, 0);
-  }
-  80% {
-    clip: rect(87px, 9999px, 92px, 0);
-  }
-  85.0% {
-    clip: rect(97px, 9999px, 40px, 0);
-  }
-  90% {
-    clip: rect(62px, 9999px, 98px, 0);
-  }
-  95% {
-    clip: rect(56px, 9999px, 94px, 0);
-  }
-  100% {
-    clip: rect(16px, 9999px, 74px, 0);
-  }
-}
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 0;
-  color: white;
-  background: #0D0D0D;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse;
-}
-.jumbotron{
-	background: #0D0D0D;
-}
-</style>
 <body>
-	<label> <!--<a href="resume.pdf">RESUME</a>--> <a href="about.html"><img src="bootstrap/images/profile.jpg" alt="Profile" class="img-circle"></a> </label>
-	<!-- <hr> -->
-	<div class="jumbotron">
-		<h1 class="animated fadeInDown name glitch" data-text="IAN ROMIE ONA">IAN ROMIE ONA</h1>
-		<p class="animated fadeInDown my-title">Web Developer</p>
-	</div>
-	<hr>
-	<center>
-	<div class="container-fluid">
-		<img src="images/6.jpg" width="60%" class="img-responsive" alt="Light">
-	</div>
+	<!--parallax 1 -->
+<section class="bg-1 text-center">
+		<h1 class="animated fadeInDown name" data-text="IAN ROMIE ONA">IAN ROMIE ONA</h1>
+		<p class="animated fadeInDown my-title">Web Developer / Software Engineer</p>
+		<br><br><br>
+		<p class="animated fadeInDown my-description" >I have a diverse set of skills, ranging from design, to<br> HTML + CSS + Javascript, all the way to PHP,<br> custom Yii and Laravel module development.</p>
+		<br><br><br>
+        <img src="images/profilepic.jpg" alt="" class='mypic'>
+</section>
+<!--/parallax 1-->
+
+
+<div class="container">
 	<br>
-	<center><a href="images/6.jpg" target="_blank" style="font-size: 16px;text-decoration: none;text-align:center;color:#898989;font-family:Lato">Download</a></center>
-	<br>
-	<br>
-	<div class="container-fluid">
-		<img src="images/5.jpg" width="60%" class="img-responsive" alt="Light">
-	</div>
-	<br>
-	<center><a href="images/5.jpg" target="_blank" style="font-size: 16px;text-decoration: none;text-align:center;color:#898989;font-family:Lato">Download</a></center>
-	<br>
-	<br>
-	<div class="container-fluid">
-		<img src="images/4.jpg" width="60%" class="img-responsive" alt="Light">
+	<div class="text-center project-head">
+		PROJECTS
 	</div>
 	<br>
-	<center><a href="images/4.jpg" target="_blank" style="font-size: 16px;text-decoration: none;text-align:center;color:#898989;font-family:Lato">Download</a></center>
-	<br>
-	<br>
-	<div class="container-fluid">
-		<img src="images/3.jpg" width="60%" class="img-responsive" alt="Light">
+	<div class="row project-container">
+        <div class="col-md-5">
+        	<div class="project">
+        		<img src="images/tag copy.png" alt="">
+        	</div>
+        </div>
+        <div class="col-md-6">
+        	<p>
+	        	<b>VTC Intranet</b> — <i>Internal application in VTC</i><br>
+				Internal application for managing Virtual Training Company (VTC) - <a href="http://vtc.com">http://vtc.com</a>
+        	</p>
+        	<p>
+				<b>Tagbond</b> — <i>A shopping  & rewards platform</i><br>
+				A Shopping & Rewards platform. Create a shopping portal or site and sell your products and services. Reward members with cash or points to help grow your company. (https://tagbond.com) - <a href="http://tagbond.com">http://tagbond.com</a>
+        	</p>
+        	<p>
+				<b>Tagcash</b> — <i>A Payments & Rewards platform</i><br>
+				A Payments & Rewards platform. Tagcash features multi currency wallets or your own closed loop community created points. (https://tagcash.com) - <a href="http://tagcash.com">http://tagcash.com</a>
+        	</p>
+        	<p>
+				<b>Tag77</b> — <i>An Events & Tickets platform</i><br>
+				An Events & Tickets platform. Create Events and sell tickets. Offer rewards and referrals to promote those tickets on Facebook, Twitter and other sites and let others earn commissions selling for you. (http://tagbond.com) - <a href="http://tag77.com">http://tag77.com</a>
+        	</p>
+        	<p>
+				<b>Tagrewards</b> — <i>A Loyalty & Rewards.</i><br>
+				A Loyalty & Rewards. Create marketing and loyalty modules and pay customers to share them on social media. Build and manage your member database and let them help you grow your company. (http://tagrewards.com) - <a href="http://tagrewards.com">http://tagrewards.com</a>
+        	</p>
+        	<p>
+				<b>Tagbond Payment</b> — <i>Payment Portal.</i><br>
+				Portal for payment using Tagcash, Dragonpay and Stripe - <a href="http://pay.tagcash.com">http://pay.tagcash.com</a> 
+        	</p>
+			<p>
+				<b>Posif</b> — <i>A Universal Rating System</i><br>
+				A Universal Rating System. - <a href="http://posif.com">http://posif.com</a>
+			</p>
+			<p>
+				<b>Miskio</b> — <i>Social networking, Chats & Gaming</i><br>
+				Social networking, Chats & Gaming - <a href="http://miskio.com">http://miskio.com</a>
+			</p>
+        </div>
+      </div>
+	<div class="divider"></div>
+
+      <div class="row project-container">
+        <div class="col-md-5">
+        	<div class="miscprojects text-center">
+        		Miscelleneous
+        		<small >projects</small>
+        	</div>
+        </div>
+        <div class="col-md-6">
+            <p>
+	        	<b>Philkraft Genealogy</b> — <i>Admin tool for Philkraft customers</i><br>
+				A Networking view for customer using Pyramid schemes - <a href="http://http://philkraft.net/genealogy">http://http://philkraft.net/genealogy</a>
+        	</p>
+        	<p>
+				<b>The Moment Group</b> — Restaurant Group Website - <a href="http://moment.deepdigit.com">http://moment.deepdigit.com</a>
+        	</p>
+        </div>
+     </div>
+
+<div class="divider"></div>
+
+</div><!--/container-->
+<section class="bg-2">
+  <div class="col-sm-10 col-sm-offset-1 text-center project-head">
+  
+    <h1>SKILLS</h1>
+    <br>
+    <p class="skill">
+    	The played between design and programming has always been of interest to me. I've been lucky enough to work alongside talented teams on a number of websites.
+    </p>
+    <p class="skill">
+    	Front-end development (HTML5, CSS3, Javascript, AngularJs, Responsive), Back-end development using open source technologies (PHP - Yii and Laravel also played with NodeJs). Mysql and MongoDB for data management system.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<div class="container">
+  	<br>
+	<div class="text-center project-head">
+		CONTACT
 	</div>
 	<br>
-	<center><a href="images/3.jpg" target="_blank" style="font-size: 16px;text-decoration: none;text-align:center;color:#898989;font-family:Lato">Download</a></center>
-	<br>
-	<br>
-	<div class="container-fluid">
-		<img src="images/1.jpg" width="60%" class="img-responsive" alt="Light">
-	</div>
-	<br>
-	<center><a href="images/1.jpg" target="_blank" style="font-size: 16px;text-decoration: none;text-align:center;color:#898989;font-family:Lato">Download</a></center>
-	<br>
-	<br>
-	<div class="container-fluid">
-		<img src="images/2.jpg" width="60%" class="img-responsive" alt="Light">
-	</div>
-	<br>
-	<center><a href="images/2.jpg" target="_blank" style="font-size: 16px;text-decoration: none;text-align:center;color:#898989;font-family:Lato">Download</a></center>
-	<br>
-	<br>
+	<p class="animated fadeInDown my-contact text-center" >Free to have to some talk and share ideas<br><a href="mailto:ianromie@gmail.com">ianromie@gmail.com</a> </p>
+ 	
+</div><!--/container-->
+
+<div class="divider"></div>
+
 </body>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://codepen.io/assets/editor/live/css_live_reload_init.js'></script>
-</html>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script>
+		/**
+		 * Author: Heather Corey
+		 * jQuery Simple Parallax Plugin
+		 *
+		 */
+		 
+		(function($) {
+		 
+		    $.fn.parallax = function(options) {
+		 
+		        var windowHeight = $(window).height();
+		 
+		        // Establish default settings
+		        var settings = $.extend({
+		            speed        : 0.15
+		        }, options);
+		 
+		        // Iterate over each object in collection
+		        return this.each( function() {
+		 
+		        	// Save a reference to the element
+		        	var $this = $(this);
+		 
+		        	// Set up Scroll Handler
+		        	$(document).scroll(function(){
+		 
+		    		        var scrollTop = $(window).scrollTop();
+		            	        var offset = $this.offset().top;
+		            	        var height = $this.outerHeight();
+		 
+		    		// Check if above or below viewport
+					if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+						return;
+					}
+		 
+					var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+		 
+		                 // Apply the Y Background Position to Set the Parallax Effect
+		    			$this.css('background-position', 'center ' + yBgPosition + 'px');
+		                
+		        	});
+		        });
+		    }
+		}(jQuery));
+
+		$('.bg-1,.bg-3').parallax({
+			speed :	0.15
+		});
+
+		$('.bg-2').parallax({
+			speed :	0.25
+		});
+	</script>
+</html>	
