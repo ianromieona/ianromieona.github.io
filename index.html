@@ -12,7 +12,7 @@
 	<!--parallax 1 -->
 <section class="bg-1 text-center">
 		<h1 class="animated fadeInDown name" data-text="IAN ROMIE ONA">IAN ROMIE ONA</h1>
-		<p class="animated fadeInDown my-title">Web Developer / Software Engineer</p>
+		<p class="animated fadeInDown my-title">Web Developer</p>
 		<br><br><br>
 		<p class="animated fadeInDown my-description" >I have a diverse set of skills, ranging from design, to<br> HTML + CSS + Javascript, all the way to PHP,<br> custom Yii and Laravel module development.</p>
 		<br><br><br>
@@ -28,16 +28,7 @@
 	</div>
 	<br>
 	<div class="row project-container">
-        <div class="col-md-5">
-        	<div class="project">
-        		<img src="images/tag copy.png" alt="">
-        	</div>
-        </div>
         <div class="col-md-6">
-        	<p>
-	        	<b>VTC Intranet</b> — <i>Internal application in VTC</i><br>
-				Internal application for managing Virtual Training Company (VTC) - <a href="http://vtc.com">http://vtc.com</a>
-        	</p>
         	<p>
 				<b>Tagbond</b> — <i>A shopping  & rewards platform</i><br>
 				A Shopping & Rewards platform. Create a shopping portal or site and sell your products and services. Reward members with cash or points to help grow your company. (https://tagbond.com) - <a href="http://tagbond.com">http://tagbond.com</a>
@@ -56,7 +47,7 @@
         	</p>
         	<p>
 				<b>Tagbond Payment</b> — <i>Payment Portal.</i><br>
-				Portal for payment using Tagcash, Dragonpay and Stripe - <a href="http://pay.tagcash.com">http://pay.tagcash.com</a> 
+				Portal for payment using Tagcash, Dragonpay and Stripe - <a href="http://pay.tagcash.com">http://pay.tagcash.com</a>
         	</p>
 			<p>
 				<b>Posif</b> — <i>A Universal Rating System</i><br>
@@ -67,16 +58,6 @@
 				Social networking, Chats & Gaming - <a href="http://miskio.com">http://miskio.com</a>
 			</p>
         </div>
-      </div>
-	<div class="divider"></div>
-
-      <div class="row project-container">
-        <div class="col-md-5">
-        	<div class="miscprojects text-center">
-        		Miscelleneous
-        		<small >projects</small>
-        	</div>
-        </div>
         <div class="col-md-6">
             <p>
 	        	<b>Philkraft Genealogy</b> — <i>Admin tool for Philkraft customers</i><br>
@@ -85,6 +66,9 @@
         	<p>
 				<b>The Moment Group</b> — Restaurant Group Website - <a href="http://moment.deepdigit.com">http://moment.deepdigit.com</a>
         	</p>
+			<p>
+				<b>Realtct</b> — Real Estate Website - <a href="http://realtct.com">http://realtct.com</a>
+			</p>
         </div>
      </div>
 
@@ -93,14 +77,14 @@
 </div><!--/container-->
 <section class="bg-2">
   <div class="col-sm-10 col-sm-offset-1 text-center project-head">
-  
+
     <h1>SKILLS</h1>
     <br>
     <p class="skill">
     	The played between design and programming has always been of interest to me. I've been lucky enough to work alongside talented teams on a number of websites.
     </p>
     <p class="skill">
-    	Front-end development (HTML5, CSS3, Javascript, AngularJs, Responsive), Back-end development using open source technologies (PHP - Yii and Laravel also played with NodeJs). Mysql and MongoDB for data management system.
+    	Front-end development (HTML5, CSS3, SASS, Javascript, AngularJs, Responsive Web Design), Back-end development using open source technologies (PHP - Yii and Laravel also played with NodeJs). Mysql and MongoDB for data management system.
     </p>
   </div>
 </section>
@@ -113,8 +97,8 @@
 		CONTACT
 	</div>
 	<br>
-	<p class="animated fadeInDown my-contact text-center" >Free to have to some talk and share ideas<br><a href="mailto:ianromie@gmail.com">ianromie@gmail.com</a> </p>
- 	
+	<p class="animated fadeInDown my-contact text-center" >Free to have some talk and share ideas<br><a href="mailto:ianromie@gmail.com">ianromie@gmail.com</a> </p>
+
 </div><!--/container-->
 
 <div class="divider"></div>
@@ -128,41 +112,41 @@
 		 * jQuery Simple Parallax Plugin
 		 *
 		 */
-		 
+
 		(function($) {
-		 
+
 		    $.fn.parallax = function(options) {
-		 
+
 		        var windowHeight = $(window).height();
-		 
+
 		        // Establish default settings
 		        var settings = $.extend({
 		            speed        : 0.15
 		        }, options);
-		 
+
 		        // Iterate over each object in collection
 		        return this.each( function() {
-		 
+
 		        	// Save a reference to the element
 		        	var $this = $(this);
-		 
+
 		        	// Set up Scroll Handler
 		        	$(document).scroll(function(){
-		 
+
 		    		        var scrollTop = $(window).scrollTop();
 		            	        var offset = $this.offset().top;
 		            	        var height = $this.outerHeight();
-		 
+
 		    		// Check if above or below viewport
 					if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
 						return;
 					}
-		 
+
 					var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-		 
+
 		                 // Apply the Y Background Position to Set the Parallax Effect
 		    			$this.css('background-position', 'center ' + yBgPosition + 'px');
-		                
+
 		        	});
 		        });
 		    }
@@ -176,4 +160,4 @@
 			speed :	0.25
 		});
 	</script>
-</html>	
+</html>
