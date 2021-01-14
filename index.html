@@ -1,163 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Ian Romie Ona</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<!--parallax 1 -->
-<section class="bg-1 text-center">
-		<h1 class="animated fadeInDown name" data-text="IAN ROMIE ONA">IAN ROMIE ONA</h1>
-		<p class="animated fadeInDown my-title">Web Developer</p>
-		<br><br><br>
-		<p class="animated fadeInDown my-description" >I have a diverse set of skills, ranging from design, to<br> HTML + CSS + Javascript, all the way to PHP,<br> custom Yii and Laravel module development.</p>
-		<br><br><br>
-        <img src="images/profilepic.jpg" alt="" class='mypic'>
-</section>
-<!--/parallax 1-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ian Romie Ona</title>
+    <link
+      rel="stylesheet"
+      href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alex+Brush"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.3.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <script src="js/modernizr-custom.js"></script>
+  </head>
+  <body class="demo-2">
+    <!--parallax 1 -->
+    <section class="bg-1 text-center">
+      <h1 class="animated fadeInDown name" data-text="IAN ROMIE ONA">
+        IAN ROMIE ONA
+      </h1>
+      <p class="animated fadeInDown my-title">Web Developer</p>
+      <br /><br /><br />
+      <p class="animated fadeInDown my-description">
+        I have a diverse set of skills, ranging <br />
+        from Design to Backend <br />
+        custom Web development.
+      </p>
+      <br /><br /><br />
+      <img src="images/profilepic.jpg" alt="" class="mypic" />
+      <style>
+        .my-contact {
+          color: white;
+        }
+        .fa {
+          margin-right: 5px;
+        }
+        .skills {
+          list-style: none;
+          padding: 0px;
+        }
+        .skills li {
+          text-align: center;
+          font-weight: 600;
+        }
+        .aligned-row {
+          display: flex;
+          flex-flow: row wrap;
+        }
 
+        .aligned-row::before {
+          display: block;
+        }
 
-<div class="container">
-	<br>
-	<div class="text-center project-head">
-		PROJECTS
-	</div>
-	<br>
-	<div class="row project-container">
-        <div class="col-md-6">
-        	<p>
-				<b>Tagbond</b> — <i>A shopping  & rewards platform</i><br>
-				A Shopping & Rewards platform. Create a shopping portal or site and sell your products and services. Reward members with cash or points to help grow your company. (https://tagbond.com) - <a href="http://tagbond.com">http://tagbond.com</a>
-        	</p>
-        	<p>
-				<b>Tagcash</b> — <i>A Payments & Rewards platform</i><br>
-				A Payments & Rewards platform. Tagcash features multi currency wallets or your own closed loop community created points. (https://tagcash.com) - <a href="http://tagcash.com">http://tagcash.com</a>
-        	</p>
-        	<p>
-				<b>Tag77</b> — <i>An Events & Tickets platform</i><br>
-				An Events & Tickets platform. Create Events and sell tickets. Offer rewards and referrals to promote those tickets on Facebook, Twitter and other sites and let others earn commissions selling for you. (http://tagbond.com) - <a href="http://tag77.com">http://tag77.com</a>
-        	</p>
-        	<p>
-				<b>Tagrewards</b> — <i>A Loyalty & Rewards.</i><br>
-				A Loyalty & Rewards. Create marketing and loyalty modules and pay customers to share them on social media. Build and manage your member database and let them help you grow your company. (http://tagrewards.com) - <a href="http://tagrewards.com">http://tagrewards.com</a>
-        	</p>
-        	<p>
-				<b>Tagbond Payment</b> — <i>Payment Portal.</i><br>
-				Portal for payment using Tagcash, Dragonpay and Stripe - <a href="http://pay.tagcash.com">http://pay.tagcash.com</a>
-        	</p>
-			<p>
-				<b>Posif</b> — <i>A Universal Rating System</i><br>
-				A Universal Rating System. - <a href="http://posif.com">http://posif.com</a>
-			</p>
-			<p>
-				<b>Miskio</b> — <i>Social networking, Chats & Gaming</i><br>
-				Social networking, Chats & Gaming - <a href="http://miskio.com">http://miskio.com</a>
-			</p>
+        .brdr {
+          border: 1px solid #5ea14b;
+          border-radius: 5px;
+          height: 230px;
+          margin-bottom: 20px;
+          padding: 10px;
+        }
+        .brdr h4 {
+          color: #5d5d5d;
+        }
+        .project-head {
+          font-size: 30px;
+        }
+      </style>
+    </section>
+    <!--/parallax 1-->
+
+    <div class="container">
+      <br />
+      <br />
+      <div class="text-center project-head">Skills</div>
+      <br />
+
+      <div class="row aligned-row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="brdr">
+            <h4 align="center">Frontend</h4>
+            <ul class="skills">
+              <li>Javascript</li>
+              <li>React / Angular / VueJS</li>
+              <li>Redux</li>
+              <li>RxJS</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6">
-            <p>
-	        	<b>Philkraft Genealogy</b> — <i>Admin tool for Philkraft customers</i><br>
-				A Networking view for customer using Pyramid schemes - <a href="http://http://philkraft.net/genealogy">http://http://philkraft.net/genealogy</a>
-        	</p>
-        	<p>
-				<b>The Moment Group</b> — Restaurant Group Website - <a href="http://moment.deepdigit.com">http://moment.deepdigit.com</a>
-        	</p>
-			<p>
-				<b>Realtct</b> — Real Estate Website - <a href="http://realtct.com">http://realtct.com</a>
-			</p>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="brdr">
+            <h4 align="center">Backend</h4>
+            <ul class="skills">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>Yii</li>
+              <li>PHPUnit</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Restful API</li>
+            </ul>
+          </div>
         </div>
-     </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="brdr">
+            <h4 align="center">Others</h4>
+            <ul class="skills">
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>Gitlab CI/CD</li>
+              <li>Unit Testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="text-center project-head">Featured Projects</div>
+      <br />
+      <div class="content">
+        <div class="grid">
+          <div class="grid__item" data-size="1280x857">
+            <a href="images/projects/gmovies.png" class="img-wrap"
+              ><img src="images/projects/gmovies.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Gmovies</h3>
+              <p>
+                A membership platform to work with scheduling mall cinema film
+                screening.
+                <em>&mdash; Full Stack Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://www.gmovies.ph"
+                        >https://www.gmovies.ph</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i
+                    ><span>Vuejs, Vuex, AngularJS, PHP, Laravel, Git, AWS</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item" data-size="1280x1280">
+            <a href="images/projects/sureseats.png" class="img-wrap"
+              ><img src="images/projects/sureseats.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Sureseats</h3>
+              <p>
+                A membership platform to work with scheduling mall cinema film
+                screening.
+                <em>&mdash; Full Stack Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://www.sureseats.com"
+                        >https://www.sureseats.com</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i
+                    ><span>Vuejs, Vuex, PHP, Laravel, Git, AWS</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item" data-size="1280x853">
+            <a href="images/projects/rush.png" class="img-wrap"
+              ><img src="images/projects/rush.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Rush</h3>
+              <p>
+                Accessible and easy-to-use programs to ease businesses into the
+                digital space without compromising the quality of service
+                offered to their clientele.
+                <em>&mdash; Front End Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://www.rush.ph"
+                        >https://www.rush.ph</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i
+                    ><span>Vuejs, PHP, Laravel, Git</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item" data-size="865x1280">
+            <a href="images/projects/scoutlogic.png" class="img-wrap"
+              ><img src="images/projects/scoutlogic.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Scoutlogic</h3>
+              <p>
+                A web portal for recruiters to make background checks.
+                <em>&mdash; Front End Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://www.scoutlogicscreening.com/"
+                        >https://www.scoutlogicscreening.com/</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i
+                    ><span>HubSpot, HTML5 & CSS-SASS</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item" data-size="1280x1280">
+            <a href="images/projects/realtct.png" class="img-wrap"
+              ><img src="images/projects/realtct.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Realtct</h3>
+              <p>
+                A real estate listing web application
+                <em>&mdash; Full Stack Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://realtct.com"
+                        >https://realtct.com</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i
+                    ><span>AngularJS, PHP, Laravel, Git</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item" data-size="1280x850">
+            <a href="images/projects/towa.png" class="img-wrap"
+              ><img src="images/projects/towa.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Towa</h3>
+              <p>
+                A web application that involves creating high level contents and
+                managing buildings.<em>&mdash; Front End Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://towa.network"
+                        >https://towa.network</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i
+                    ><span>Angular, React, Redux, RxJs, Git</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="grid__item" data-size="1280x850">
+            <a href="images/projects/tagcash.png" class="img-wrap"
+              ><img src="images/projects/tagcash.png" alt="img07"
+            /></a>
+            <div class="description description--grid">
+              <h3>Tagcash</h3>
+              <p>
+                Features multi currency(crytocurrency) wallets or your own
+                closed loop community created points.
+                <em>&mdash; Full Stack Development</em>
+              </p>
+              <div class="details">
+                <ul>
+                  <li>
+                    <i class="fa fa-external-link"></i
+                    ><span
+                      ><a href="https://tagcash.com/"
+                        >https://tagcash.com</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <i class="fa fa-wrench"></i><span>Yii, Laravel, Git</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /grid -->
+        <div class="preview">
+          <button class="action action--close">
+            <i class="fa fa-times"></i><span class="text-hidden">Close</span>
+          </button>
+          <div class="description description--preview"></div>
+        </div>
+        <!-- /preview -->
+      </div>
 
-<div class="divider"></div>
+      <div class="divider"></div>
+    </div>
+    <!--/container-->
 
-</div><!--/container-->
-<section class="bg-2">
-  <div class="col-sm-10 col-sm-offset-1 text-center project-head">
+    <div class="divider"></div>
 
-    <h1>SKILLS</h1>
-    <br>
-    <p class="skill">
-    	The played between design and programming has always been of interest to me. I've been lucky enough to work alongside talented teams on a number of websites.
-    </p>
-    <p class="skill">
-    	Front-end development (HTML5, CSS3, SASS, Javascript, AngularJs, Responsive Web Design), Back-end development using open source technologies (PHP - Yii and Laravel also played with NodeJs). Mysql and MongoDB for data management system.
-    </p>
-  </div>
-</section>
+    <div class="container">
+      <br />
+      <div class="text-center project-head">CONTACT</div>
+      <br />
+      <p class="animated fadeInDown my-contact text-center">
+        Free to have some talk and share ideas<br /><a
+          href="mailto:ianromie@gmail.com"
+          >ianromie@gmail.com</a
+        >
+      </p>
+    </div>
+    <!--/container-->
 
-<div class="divider"></div>
+    <div class="divider"></div>
+  </body>
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var support = { transitions: Modernizr.csstransitions },
+        // transition end event name
+        transEndEventNames = {
+          WebkitTransition: "webkitTransitionEnd",
+          MozTransition: "transitionend",
+          OTransition: "oTransitionEnd",
+          msTransition: "MSTransitionEnd",
+          transition: "transitionend",
+        },
+        transEndEventName =
+          transEndEventNames[Modernizr.prefixed("transition")],
+        onEndTransition = function (el, callback) {
+          var onEndCallbackFn = function (ev) {
+            if (support.transitions) {
+              if (ev.target != this) return;
+              this.removeEventListener(transEndEventName, onEndCallbackFn);
+            }
+            if (callback && typeof callback === "function") {
+              callback.call(this);
+            }
+          };
+          if (support.transitions) {
+            el.addEventListener(transEndEventName, onEndCallbackFn);
+          } else {
+            onEndCallbackFn();
+          }
+        };
 
-<div class="container">
-  	<br>
-	<div class="text-center project-head">
-		CONTACT
-	</div>
-	<br>
-	<p class="animated fadeInDown my-contact text-center" >Free to have some talk and share ideas<br><a href="mailto:ianromie@gmail.com">ianromie@gmail.com</a> </p>
+      new GridFx(document.querySelector(".grid"), {
+        imgPosition: {
+          x: -0.5,
+          y: 1,
+        },
+        onOpenItem: function (instance, item) {
+          instance.items.forEach(function (el) {
+            if (item != el) {
+              var delay = Math.floor(Math.random() * 50);
+              el.style.WebkitTransition =
+                "opacity .5s " +
+                delay +
+                "ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s " +
+                delay +
+                "ms cubic-bezier(.7,0,.3,1)";
+              el.style.transition =
+                "opacity .5s " +
+                delay +
+                "ms cubic-bezier(.7,0,.3,1), transform .5s " +
+                delay +
+                "ms cubic-bezier(.7,0,.3,1)";
+              el.style.WebkitTransform = "scale3d(0.1,0.1,1)";
+              el.style.transform = "scale3d(0.1,0.1,1)";
+              el.style.opacity = 0;
+            }
+          });
+        },
+        onCloseItem: function (instance, item) {
+          instance.items.forEach(function (el) {
+            if (item != el) {
+              el.style.WebkitTransition = "opacity .4s, -webkit-transform .4s";
+              el.style.transition = "opacity .4s, transform .4s";
+              el.style.WebkitTransform = "scale3d(1,1,1)";
+              el.style.transform = "scale3d(1,1,1)";
+              el.style.opacity = 1;
 
-</div><!--/container-->
-
-<div class="divider"></div>
-
-</body>
-<script src="js/jquery-2.1.4.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script>
-		/**
-		 * Author: Heather Corey
-		 * jQuery Simple Parallax Plugin
-		 *
-		 */
-
-		(function($) {
-
-		    $.fn.parallax = function(options) {
-
-		        var windowHeight = $(window).height();
-
-		        // Establish default settings
-		        var settings = $.extend({
-		            speed        : 0.15
-		        }, options);
-
-		        // Iterate over each object in collection
-		        return this.each( function() {
-
-		        	// Save a reference to the element
-		        	var $this = $(this);
-
-		        	// Set up Scroll Handler
-		        	$(document).scroll(function(){
-
-		    		        var scrollTop = $(window).scrollTop();
-		            	        var offset = $this.offset().top;
-		            	        var height = $this.outerHeight();
-
-		    		// Check if above or below viewport
-					if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-						return;
-					}
-
-					var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
-
-		                 // Apply the Y Background Position to Set the Parallax Effect
-		    			$this.css('background-position', 'center ' + yBgPosition + 'px');
-
-		        	});
-		        });
-		    }
-		}(jQuery));
-
-		$('.bg-1,.bg-3').parallax({
-			speed :	0.15
-		});
-
-		$('.bg-2').parallax({
-			speed :	0.25
-		});
-	</script>
+              onEndTransition(el, function () {
+                el.style.transition = "none";
+                el.style.WebkitTransform = "none";
+              });
+            }
+          });
+        },
+      });
+    })();
+  </script>
 </html>
