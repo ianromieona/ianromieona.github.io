@@ -27,14 +27,14 @@
       href="https://livechat.yourpave.com/v1/css/pave-live-chat.css"
     />
   </head>
-  <body>
+  <body id="app">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
   <script src="https://livechat.yourpave.com/v1/js/pave-live-chat.js"></script>
   <script>
     var paveChat = new PaveChat({
-      container: '#root',
+      container: '#app',
       agency_id: '8b09a1a1-0a8f-4aed-ac56-d3a0244a8d47',
     });
   </script>
